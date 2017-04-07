@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gemStore">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../dist/bootstrap-3.3.7/css/bootstrap.min.css">
+        <script src="../dist/angular.min.1.2.js"></script>
+        <script src="app.lv2.js"></script>
+    </head>
+    <body ng-controller="StoreController as store">
+    	<div ng-repeat="product in store.products">
+    		<h3>{{product.name}}
+	        	<em class="pull-right">{{product.price | currency}}</em>
+	      	</h3>
+            <!-- Image Gallery  -->
+            <div class="gallery">
+              <img ng-src="{{product.images[0]}}"/>
+            </div>
+            <!-- Display All Thumbnails -->
+            <ul class="img-thumbnails clearfix">
+              <li class="small-image pull-left thumbnail" ng-repeat="image in product.images" >
+                <img ng-src="" />
+              </li>
+            </ul>
+    	</div>
+    </body>
+</html>
