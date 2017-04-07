@@ -44,4 +44,5 @@ Task 2: Displaying the First Image
 	1. We've added images to all products as well – like any self respecting store should have. A product has an array of images we can use in our HTML. Let's get the first image to show on the page!
 
 Task 3: Display All Thumbnails
-	Our 2-dimensional clients have worked hard to produce multiple images for their gems. Display all the thumbnails inside our gallery without repeating yourself by using an AngularJS directive on the li.thumbnail element.
+	1. Our 2-dimensional clients have worked hard to produce multiple images for their gems. Display all the thumbnails inside our gallery without repeating yourself by using an AngularJS directive on the li.thumbnail element.
+	2. Now that we have image available from our ng-repeat let's replace the product.images[0] with it.
