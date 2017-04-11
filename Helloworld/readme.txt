@@ -46,3 +46,6 @@ Task 2: Displaying the First Image
 Task 3: Display All Thumbnails
 	1. Our 2-dimensional clients have worked hard to produce multiple images for their gems. Display all the thumbnails inside our gallery without repeating yourself by using an AngularJS directive on the li.thumbnail element.
 	2. Now that we have image available from our ng-repeat let's replace the product.images[0] with it.
+
+Task 4: No Images, No Gallery
+	1. Many times a product will be ready to sell, but won't have images yet (like our first one). In this case the images array will just be empty. We don't want to display the .gallery element if there are no images. Create an expression on our .gallery div to make this happen.
